@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prodigy Infotech | Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>PRODIGY TIC-TAC-TOE</h1>
+    <div class="settings">
+      <input type="text" id="playerX" placeholder="Player X Name" />
+      <input type="text" id="playerO" placeholder="Player O / AI Name" />
+      <select id="aiLevel">
+        <option value="easy">AI: Easy</option>
+        <option value="medium">AI: Medium</option>
+      </select>
+      <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div class="scoreboard">
+      <span id="scoreX">X: 0</span>
+      <span id="scoreO">O: 0</span>
+      <span id="draws">Draws: 0</span>
+    </div>
+
+    <div class="board" id="board"></div>
+    <div class="status" id="status"></div>
+    <button id="restartBtn">Restart Game</button>
+    <footer>Internship Task 03 • Prodigy Infotech</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
